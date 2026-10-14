@@ -1,0 +1,236 @@
+/**
+ * WPCalibrate Calendar Sync - Frontend Styles
+ */
+
+:root {
+  --wpcs-primary: #2563eb;
+  --wpcs-primary-hover: #1d4ed8;
+  --wpcs-surface: #ffffff;
+  --wpcs-bg-subtle: #f8fafc;
+  --wpcs-border: #e2e8f0;
+  --wpcs-text-main: #0f172a;
+  --wpcs-text-muted: #64748b;
+  --wpcs-radius: 8px;
+  --wpcs-focus: 0 0 0 3px rgba(37, 99, 235, 0.4);
+}
+
+.wpcs-calendar {
+  box-sizing: border-box;
+  font-family: inherit;
+  color: var(--wpcs-text-main);
+  background: var(--wpcs-surface);
+  border: 1px solid var(--wpcs-border);
+  border-radius: var(--wpcs-radius);
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.wpcs-calendar * {
+  box-sizing: border-box;
+}
+
+/* Empty State */
+.wpcs-empty-state {
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--wpcs-text-muted);
+  font-size: 15px;
+}
+
+/* Agenda View */
+.wpcs-agenda-view .wpcs-event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wpcs-agenda-view .wpcs-date-header {
+  margin: 20px 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--wpcs-border);
+}
+
+.wpcs-agenda-view .wpcs-date-header:first-child {
+  margin-top: 0;
+}
+
+.wpcs-agenda-view .wpcs-date-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--wpcs-text-main);
+  margin: 0;
+}
+
+.wpcs-agenda-view .wpcs-event-card {
+  display: flex;
+  gap: 20px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: var(--wpcs-bg-subtle);
+  border: 1px solid var(--wpcs-border);
+  border-radius: var(--wpcs-radius);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wpcs-agenda-view .wpcs-event-card:hover {
+  border-color: var(--wpcs-primary);
+}
+
+.wpcs-agenda-view .wpcs-event-card:focus-visible {
+  outline: none;
+  box-shadow: var(--wpcs-focus);
+}
+
+.wpcs-event-time {
+  min-width: 140px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--wpcs-primary);
+  line-height: 1.4;
+}
+
+.wpcs-badge.wpcs-all-day {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.wpcs-event-details {
+  flex: 1;
+}
+
+.wpcs-event-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  color: var(--wpcs-text-main);
+}
+
+.wpcs-event-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wpcs-event-link:hover,
+.wpcs-event-link:focus-visible {
+  color: var(--wpcs-primary);
+  text-decoration: underline;
+}
+
+.wpcs-event-location {
+  font-size: 13px;
+  color: var(--wpcs-text-muted);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wpcs-event-description {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+/* Month Grid View */
+.wpcs-month-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.wpcs-month-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.wpcs-month-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.wpcs-month-table th {
+  padding: 10px 4px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--wpcs-text-muted);
+  border-bottom: 1px solid var(--wpcs-border);
+}
+
+.wpcs-month-table td {
+  height: 90px;
+  vertical-align: top;
+  border: 1px solid var(--wpcs-border);
+  padding: 6px;
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+
+.wpcs-month-table td:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--wpcs-primary);
+}
+
+.wpcs-cell-empty {
+  background: #f8fafc;
+}
+
+.wpcs-day-number {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--wpcs-text-muted);
+  margin-bottom: 4px;
+}
+
+.wpcs-day-events-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wpcs-day-event-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  padding: 2px 4px;
+  margin-bottom: 2px;
+  background: #eff6ff;
+  color: #1e40af;
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wpcs-event-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--wpcs-primary);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .wpcs-agenda-view .wpcs-event-card {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .wpcs-month-table td {
+    height: 60px;
+    padding: 3px;
+  }
+  .wpcs-day-event-item {
+    font-size: 9px;
+  }
+}

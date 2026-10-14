@@ -1,0 +1,41 @@
+# FTP Credentials & Secrets
+.ftp-config.json
+.ftp-config.local.json
+.ftp-deploy-state.json
+ftp-config.json
+.env
+.env.*
+
+# AI Instructions & Internal Documentation
+.agents/
+.claude/
+**/CLAUDE.md
+**/PROJECT_MEMORY.md
+**/TROUBLESHOOTING.md
+**/CHANGELOG_AI.md
+**/TODO_AI.md
+docs/CLAUDE.md
+docs/PROJECT_MEMORY.md
+docs/TROUBLESHOOTING.md
+docs/CHANGELOG_AI.md
+docs/TODO_AI.md
+docs/implementation-status.md
+
+# Development & Composer Tools
+composer.phar
+.phpunit.cache/
+phpunit.result.cache
+phpunit.xml
+phpcs.xml
+tests/
+scripts/
+scratch/
+sync-ftp.ps1
+
+# Packaging & Distribution Artifacts
+wpcalibrate-calendar-sync/
+dist/
+*.zip
+*.log
+.DS_Store
+Thumbs.db

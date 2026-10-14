@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpcalibrate/calendar",
+  "version": "1.0.0",
+  "title": "WPCalibrate Calendar",
+  "category": "widgets",
+  "icon": "calendar-alt",
+  "description": "Display synchronized Google Calendar events in Agenda or Month view.",
+  "keywords": ["calendar", "google calendar", "events", "agenda"],
+  "textdomain": "wpcalibrate-calendar-sync",
+  "attributes": {
+    "calendars": {
+      "type": "string",
+      "default": ""
+    },
+    "view": {
+      "type": "string",
+      "default": "agenda"
+    },
+    "limit": {
+      "type": "number",
+      "default": 20
+    },
+    "show_description": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_location": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "editorScript": "wpcs-calendar-block-editor",
+  "editorStyle": "wpcs-calendar-block-editor-style"
+}

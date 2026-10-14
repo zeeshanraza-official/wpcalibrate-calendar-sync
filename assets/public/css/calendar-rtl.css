@@ -1,0 +1,17 @@
+/**
+ * WPCalibrate Calendar Sync - Frontend RTL Styles
+ */
+
+.wpcs-calendar {
+  direction: rtl;
+  text-align: right;
+}
+
+.wpcs-event-location {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.wpcs-day-event-item {
+  flex-direction: row-reverse;
+}

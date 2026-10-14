@@ -1,0 +1,31 @@
+.wpcs-block-preview {
+  padding: 24px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.wpcs-block-preview-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #1e293b;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.wpcs-block-preview-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+}
+
+.wpcs-block-preview-info {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
